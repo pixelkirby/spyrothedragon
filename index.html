@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <p>prueba</p>
+    <p>prueba2</p>
     <div style="width:640px;height:480px;max-width:100%">
         <div id="game"></div>
     </div>
@@ -25,9 +25,8 @@
         EJS_player = '#game';
         EJS_biosUrl = 'SCPH1001.BIN'; // Url to Bios file
         EJS_gameUrl = fetch('https://filesus3.retrogames.cc/MndKa1o1VnRhWlptbVpScENSVnBhWmRsTnRoT3ByOVdZd2xCQndrelYraWZQUVdWeFpwZklNTW9ZYmdBRkwvb3FlalA0a1NTWXRtK2Njaz0%3D/Spyro-1.pbp')
-            .then(respuesta => respuesta.json())
-            .then(elemento => {
-                return elemento;
+            .then(respuesta => {
+                return respuesta;
             }); // Url to Game rom
         EJS_core = 'psx';
         EJS_pathtodata = 'data/'; //path to all of the wasm and js files. MUST all be in the same directory!!
